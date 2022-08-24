@@ -1,0 +1,12 @@
+diff --git a/inst/lib/bs5/scss/mixins/_buttons.scss b/inst/lib/bs5/scss/mixins/_buttons.scss
+index cf087fda..7db8ad6f 100644
+--- a/inst/lib/bs5/scss/mixins/_buttons.scss
++++ b/inst/lib/bs5/scss/mixins/_buttons.scss
+@@ -56,6 +56,7 @@
+   --#{$prefix}btn-disabled-color: #{$color};
+   --#{$prefix}btn-disabled-bg: transparent;
+   --#{$prefix}btn-disabled-border-color: #{$color};
++  --#{$prefix}btn-bg: transparent;
+   --#{$prefix}gradient: none;
+ }
+ // scss-docs-end btn-outline-variant-mixin

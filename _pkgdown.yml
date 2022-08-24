@@ -1,0 +1,142 @@
+destination: docs
+
+toc:
+  depth: 2
+
+url: https://rstudio.github.io/bslib/
+
+template:
+  bootstrap: 5
+  bslib:
+    info: "#E6F2FD"
+    base_font:
+      google: "Atkinson Hyperlegible"
+    headings-color: "#206B72"
+    link-color: "#216B73"
+    link-decoration: underline var(--bs-info) dotted
+  params:
+    footer: <b>bslib</b> is an R package developed by <a href='https://rstudio.com'>RStudio</a>
+    docsearch:
+      api_key: 53fd87c79a13e431b4298611470d023a
+      index_name: bslib
+
+navbar:
+  bg: info
+  type: light
+  structure:
+    left:  [intro, articles, integration]
+    right: [reference, news, github]
+  components:
+    home: ~
+    articles:
+      text: Articles
+      menu:
+        #- text: Why Sass over CSS?
+        #  href: articles/why-sass.html
+        - text: Cards
+          href: articles/cards.html
+        - text: BS5 Sass variables
+          href: articles/bs5-variables.html
+        - text: BS4 Sass variables
+          href: articles/bs4-variables.html
+        - text: Utility Classes
+          href: articles/utility-classes.html
+        - text: Custom components
+          href: articles/custom-components.html
+    reference:
+      text: Reference
+      href: reference/index.html
+    news:
+      text: News
+      href: news/index.html
+    github:
+      icon: fab fa-github fa-lg
+      href: https://github.com/rstudio/bslib
+
+reference:
+- title: Theme creation
+  description: |
+    Tools for creating customized Bootstrap themes.
+  contents:
+    - bs_theme
+    - bs_add_variables
+    - font_face
+- title: Interactive theming
+  description: |
+    Interactively customize themes.
+  contents:
+    - bs_theme_preview
+    - run_with_themer
+    - bs_themer
+- title: Cards
+  description: |
+    Create and arrange cards
+  contents:
+    - card
+    - card_grid
+    - as.card_item
+- title: Navigation
+  description: |
+    Create (tabbed) sections of content.
+  contents:
+    - nav
+    - navs_tab
+    - nav_select
+- title: Accordions
+  description: |
+    Create collapsable sections of content
+  contents:
+    - accordion
+    - accordion_mutate
+- title: Value box
+  description: |
+    Highlight important findings
+  contents:
+    - value_box
+- title: Input controls
+  description: |
+    UI controls for capturing user input
+  contents:
+    - input_check_buttons
+    - input_check_search
+    - input_switch
+- title: Sidebar layout
+  description: |
+    A 'full-bleed' sidebar layout
+  contents:
+    - layout_sidebar
+- title: Page layouts
+  contents:
+    - page
+- title: Dynamic theming
+  description: |
+    Create dynamically themable HTML widgets.
+  contents:
+    - bs_dependency
+    - bs_dependency_defer
+    - bs_theme_dependencies
+    - bs_current_theme
+- title: Global theme creation
+  description: |
+    Use Bootstrap themes globally.
+  contents:
+    - bs_global_theme
+    - bs_global_add_variables
+- title: Theme subsetting
+  description: |
+    Reduce the final CSS bundle size.
+  contents:
+    - bs_remove
+- title: Bootstrap SASS compilation
+  description: |
+    Compile themes into HTML dependencies and CSS strings.
+  contents:
+    - bs_theme_dependencies
+    - bs_dependency
+- title: Other utility functions
+  contents:
+    - bs_get_variables
+    - theme_version
+    - theme_bootswatch
+    - bootswatch_themes
+    - version_default

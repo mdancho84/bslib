@@ -1,0 +1,19 @@
+.Rproj.user
+.Rhistory
+.DS_Store
+docs/
+sandbox/
+revdep/
+inst/themer-demo/deploy/rsconnect
+
+# GHA remotes installation
+.github/r-depends.rds
+
+inst/doc
+
+# yarn
+inst/yarn.lock
+
+inst/rmarkdown/templates/*/skeleton/skeleton.html
+.Rdata
+.httr-oauth

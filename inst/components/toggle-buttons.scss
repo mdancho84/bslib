@@ -1,0 +1,9 @@
+@each $color,
+$value in $theme-colors {
+  .bslib-toggle-buttons {
+    input:not(:checked) + .btn-outline-#{$color}:hover {
+      color: $value;
+      background-color: transparent;
+    }
+  }
+}
